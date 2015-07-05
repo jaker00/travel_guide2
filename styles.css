@@ -84,15 +84,20 @@ video {
     padding: 10px 10px;
 }
 
-.destlist li {
-    list-style-type: none;
-    padding: 5px 15px;
+.split-list ul{
+  float: left;
+  margin-left: 1em;
 }
+.split-list li{
+  padding-right: 2em;
+  line-height: 1.5em;
+  @include font-size(12px);
+ }
 
-.destlist ul li{
-    float: left;
-}
+
+
 
 iframe {
     padding: 20px 10px;
+    margin: 0px;
 }
