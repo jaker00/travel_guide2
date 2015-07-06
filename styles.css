@@ -86,12 +86,13 @@ video {
 
 .split-list ul{
   float: left;
-  margin-left: 1em;
+  margin-left: 0em;
 }
 .split-list li{
   padding-right: 2em;
   line-height: 1.5em;
   @include font-size(12px);
+  list-style-type: none;
  }
 
 
