@@ -25,30 +25,6 @@ html, body {
     text-decoration: none;
 }
 
-nav li a {
-    text-decoration: none;
-    color: white;
-    padding: 0px 10px;
-    font-family:"Avantgarde", sans-serif;
-    
-    
-}
-
-nav li {
-    display: inline;
-    
-}
-
-nav ul {
-    margin: 0px;
-    padding: 10px;
-}
-
-nav {
-    background: orange;
-    margin: 0px;
-    text-indent: 40px;
-}
 
 h1 {
     font-family: sans-serif;
@@ -123,7 +99,7 @@ iframe {
 
 
 
-.clearfix:after {
+.clearfix::after {
     display:block;
     clear:both;
 }
@@ -131,12 +107,11 @@ iframe {
 /*----- Menu Outline -----*/
 .menu-wrap {
     width:100%;
-    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
     background:#3e3436;
 }
  
 .menu {
-    width:1000px;
+    width:100%;
     margin:0px auto;
 }
  
@@ -147,7 +122,7 @@ iframe {
 }
  
 .menu a {
-    transition:all linear 0.15s;
+    /*transition:all linear 0.15s;*/
     color:#919191;
 }
  
@@ -163,26 +138,35 @@ iframe {
  
 /*----- Top Level -----*/
 .menu > ul > li {
-    float:left;
     display:inline-block;
     position:relative;
-    font-size:19px;
+    font-size:16px;
 }
  
 .menu > ul > li > a {
-    padding:10px 40px;
+    padding:0px 0px;
     display:inline-block;
-    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+    color: white;
 }
+
+
+
  
-.menu > ul > li:hover > a, .menu > ul > .current-item > a {
-    background:#2e2728;
-}
+/*.menu > ul > li:hover > a, .menu > ul > .current-item > a {*/
+/*    background:#2e2728;*/
+/*}*/
+ 
+ 
+ 
  
 /*----- Bottom Level -----*/
 .menu li:hover .sub-menu {
     z-index:1;
     opacity:1;
+}
+
+.menu li:hover {
+    background: white;
 }
  
 .sub-menu {
@@ -190,12 +174,12 @@ iframe {
     padding:5px 0px;
     position:absolute;
     top:100%;
-    left:0px;
+    left: 0px;
     z-index:-1;
     opacity:0;
     transition:opacity linear 0.15s;
     box-shadow:0px 2px 3px rgba(0,0,0,0.2);
-    background:#2e2728;
+    background: white;
 }
  
 .sub-menu li {
@@ -204,10 +188,38 @@ iframe {
 }
  
 .sub-menu li a {
-    padding:10px 30px;
+    padding:0px 10px;
     display:block;
 }
  
-.sub-menu li a:hover, .sub-menu .current-item a {
-    background:#3e3436;
+/*.sub-menu li a:hover, .sub-menu .current-item a {*/
+/*    background:#3e3436;*/
+/*}*/
+
+
+
+
+nav {
+    background: orange;
+    margin: 0px;
+
+}
+nav ul {
+    margin: 0px;
+    padding: 0px 40px;
+}
+
+
+nav li {
+    display: inline;
+    padding: 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+
+    font-family:"Avantgarde", sans-serif;
+    
+    
 }
