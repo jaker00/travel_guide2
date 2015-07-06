@@ -3,6 +3,8 @@
     <head>
         <title>Destinations</title>
         <link rel="stylesheet" href="styles.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="jquery.js"></script>
     </head>
     
     <div class="container">
@@ -13,30 +15,43 @@
     
     
     <!--Nav Bar-->
-    <nav>
-        <ul>
-            <li><a href="destinations.html" data-toggle="dropdown">Destinations</a></li>
-            <li><a href="cruises.html" data-toggle="dropdown">Cruises</a></li>
-            <li><a href="newsandfeatures.html" data-toggle="dropdown">News & Features</a></li>
+ <div class="menu-wrap">  
+    <nav class="menu">
+        <ul class="clearfix">
+            <li><a href="destinations.html" class="tabs">Destinations <span class="arrow"></span>&#x25BE;</a>
             
+            
+                <ul class="sub-menu">
+                    <li><a href="#">London</a></li>
+                    <li><a href="#">Paris</a></li>
+                    <li><a href="#">Tokyo</a></li>
+                    <li><a href="#">Brazil</a></li>
+                    <li><a href="#">Argentina</a></li>
+                    <li><a href="#">Guam</a></li>
+                </ul>
+            
+            </li>
+
+            <li><a href="cruises.html" class="tabs">Cruises</a></li>
+            <li><a href="newsandfeatures.html" class="tabs">News & Features</a></li>
         </ul>
     </nav>
+  </div> 
+    
     <!--End of nav bar-->
     
     
     <body>
       <h1>Where do <i>you</i> want to go?</h1>
-      
-      <div class="destlist">
-        <ul>
+      <div class="container4">
+        <ul class="split-list">
           <li>London</li>
           <li>Paris</li>
           <li>Tokyo</li>
+          <li>Brazil</li>
+          <li>Argentina</li>
+          <li>Guam</li>
         </ul>
-      </div>
-      <br>
-      <div class="container4">
-      <iframe id="gopro" width="560" height="315" src="https://www.youtube.com/embed/CzW_5x1M4Uc" frameborder="0" allowfullscreen></iframe>
       </div>
     </body>
     
