@@ -99,7 +99,7 @@ iframe {
 
 
 
-.clearfix::after {
+.clearfix:after {
     display:block;
     clear:both;
 }
@@ -127,7 +127,7 @@ iframe {
 }
  
 .menu li:hover > a, .menu .current-item > a {
-    /*text-decoration:none;*/
+    text-decoration:none;
     color:#000;
 }
  
@@ -161,10 +161,12 @@ iframe {
  
 /*----- Bottom Level -----*/
 .menu li:hover .sub-menu {
-    z-index:1;
-    opacity:1;
+    display: block;
 }
 
+#destinations:hover  {
+    display: block;
+}
 .menu li:hover {
     background: white;
 }
@@ -175,11 +177,10 @@ iframe {
     position:absolute;
     top:100%;
     left: 0px;
-    z-index:-1;
-    opacity:0;
     transition:opacity linear 0.15s;
     box-shadow:0px 2px 3px rgba(0,0,0,0.2);
     background: white;
+    display: none;
 }
  
 .sub-menu li {
@@ -217,6 +218,7 @@ nav ul {
 nav li {
     display: inline;
     padding: 10px;
+    height:100%;
 }
 
 nav li a {
@@ -226,4 +228,11 @@ nav li a {
     font-family:"Avantgarde", sans-serif;
     
     
+}
+
+
+textarea {
+    margin-left: 40px;
+    width: 400px;
+    height: 100px;
 }
